@@ -9,6 +9,16 @@ body {
     color: #363636;
     line-height: 1.6;
 }
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+@media (min-width: 768px) {
+    main {
+        flex-direction: row;
+    }
+}
 header {
     background-color: rgb(60, 90, 172);
     padding: 20px 0;

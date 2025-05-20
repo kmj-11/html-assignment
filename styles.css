@@ -40,16 +40,19 @@ nav ul li {
     text-align: center;
 }
 nav ul li a {
-    color: black;
+    display: in-line block;
+    padding: 10px 14px;
+    background-color: #f0f8ff;
+    border-radius: 6px;
+    color:#000;
     text-decoration: none;
     font-size: 20px;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 nav ul li a:hover {
     color: #ec9c33;
-    background-color: #ffeecf;
+    background-color: #cce7ff;
     padding: 8px 12px;
-    border-radius: 6px;
     transform: scale(1.05);
 }
 header h1 {

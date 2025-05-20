@@ -19,6 +19,7 @@ main {
     main {
         flex-direction: row;
     }
+    
     main article {
         flex: 1;
     }

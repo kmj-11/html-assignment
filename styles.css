@@ -13,10 +13,15 @@ main {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 0 20px;
 }
 @media (min-width: 768px) {
     main {
         flex-direction: row;
+    }
+    
+    main article {
+        flex: 1;
     }
 }
 header {
@@ -26,24 +31,34 @@ header {
 nav { 
     padding: 20px;
     text-align: center;
+    display: flex;
 }
 nav ul {
     display: flex;
     list-style: none;
     gap: 30px;
     justify-content: center;
+    flex-direction: row;
 }
 nav ul li {
     margin: 0 15px;
     text-align: center;
 }
 nav ul li a {
-    color: black;
+    display: inline-block;
+    padding: 10px 14px;
+    background-color: #f0f8ff;
+    border-radius: 6px;
+    color:#000;
     text-decoration: none;
     font-size: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 nav ul li a:hover {
     color: #ec9c33;
+    background-color: #cce7ff;
+    padding: 8px 12px;
+    transform: scale(1.05);
 }
 header h1 {
     font-size: 2.5em;
@@ -51,12 +66,13 @@ header h1 {
 }
 header p {
     font-size: 1.2em;
-    color: #black;
+    color: #000;
 }
 section {
     padding: 40px 20px;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 0 10px;
+    flex: 1;
 }
 section h2 {
     font-size: 2em;
@@ -69,9 +85,13 @@ footer {
     padding: 20px;
     margin-top: 40px;
 }
-img {
-    max-width: 100%;
+article img {
+    width: 100%;
+    max-width: 300px;
     height: auto;
-    margin: 20px auto;
+    display: block;
+    margin: 0 auto;
     border-radius: 8px;
+    height: 450px;
+    object-fit: cover;
 }

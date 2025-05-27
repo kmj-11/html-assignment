@@ -37,7 +37,10 @@ This part of my project enhances my original layout with the following:
 ## Challenges
 - I struggled with some CSS values overriding each other but used DevTools to help me troubleshoot.
 - I also began this assignment by editing a copy of my stylesheet but not actually working out of the copied folder in VS code and it took me a while to figure out what was happening and why my updated CSS was not showing up on my site preview. I did eventually figure this out and re-organized my folders.
+## Assignment 5 - Adding an interactive element to the site using Javascript
+- I Added a button into my header that when users click on it, a hidden message is revealed thanking them for visiting the site. This adds a friendly and interactive element.
+- I also updated my html with a buttom id and message id, and styled this in css.
 ## Technologies used
-HTML5, CSS, Advanced CSS.
+HTML5, CSS, Advanced CSS, Javascript.
 ## Author
 Created by Kayla Jacobs. This project was built as an assignment for a front-end web development course

@@ -95,3 +95,15 @@ article img {
     height: 450px;
     object-fit: cover;
 }
+#greetButton {
+font-size: 14px; 
+padding: 6px 8px;
+margin-top: 20px;
+cursor: pointer;
+}
+#message {
+    font-size:18px;
+    color: #333;
+    margin-top: 10px;
+    font-style: italic;
+}

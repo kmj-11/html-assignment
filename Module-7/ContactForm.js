@@ -1,4 +1,4 @@
-import Modal from './Modal.vue'
+import Modal from './Modal.js'
 
 export default {
   name: 'ContactForm',

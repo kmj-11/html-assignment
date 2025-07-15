@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-section">
+      <h1>Contact Me</h1>
+      <form id="contactForm" novalidate>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Modal confirmation -->
+    <div id="modal" class="modal hidden">
+      <div class="modal-content">
+        <p>Thank you! Your message has been sent.</p>
+        <button id="closeModal">Close</button>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Kayla. All rights reserved.</p>
+  </footer>
+
+  <script>
+  const form = document.getElementById('contact-form');
+  const modal = document.getElementById('confirmation-modal');
+  const closeBtn = document.getElementById('close-modal');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    // Very basic validation
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    if (name && email && message) {
+      modal.classList.remove('hidden');
+      form.reset(); // Clear form
+    } else {
+      alert('Please fill in all fields.');
+    }
+  });
+
+  closeBtn.addEventListener('click', () => {
+    modal.classList.add('hidden');
+  });
+</script>
+
+</body>
+</html>
